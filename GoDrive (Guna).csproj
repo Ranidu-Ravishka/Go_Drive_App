@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA784E24-C561-4E57-82AC-887677C9CB1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GoDrive__Guna_</RootNamespace>
+    <AssemblyName>GoDrive %28Guna%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Users\wppul\OneDrive\Desktop\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 2.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.HomePage.Designer.cs">
+      <DependentUpon>1.HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.DashboardPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.DashboardPage.Designer.cs">
+      <DependentUpon>2.DashboardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientManagementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientManagementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Convertibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Convertibles.Designer.cs">
+      <DependentUpon>Convertibles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chrysler300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chrysler300.Designer.cs">
+      <DependentUpon>Chrysler300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChevroletMalibu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChevroletMalibu.Designer.cs">
+      <DependentUpon>ChevroletMalibu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLEcabirolet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLEcabirolet.Designer.cs">
+      <DependentUpon>CLEcabirolet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classev.Designer.cs">
+      <DependentUpon>Classev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientManagement.Designer.cs">
+      <DependentUpon>ClientManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PManagement.Designer.cs">
+      <DependentUpon>PManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ratings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ratings.Designer.cs">
+      <DependentUpon>Ratings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vitolongtourer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vitolongtourer.Designer.cs">
+      <DependentUpon>Vitolongtourer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seriesconvertible4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seriesconvertible4.Designer.cs">
+      <DependentUpon>Seriesconvertible4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MercedesAMGSL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MercedesAMGSL.Designer.cs">
+      <DependentUpon>MercedesAMGSL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MazdaMX5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MazdaMX5.Designer.cs">
+      <DependentUpon>MazdaMX5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mazdacx70.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mazdacx70.Designer.cs">
+      <DependentUpon>Mazdacx70.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sportback300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sportback300.Designer.cs">
+      <DependentUpon>Sportback300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDefender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewDefender.Designer.cs">
+      <DependentUpon>NewDefender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mazdacx90.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mazdacx90.Designer.cs">
+      <DependentUpon>Mazdacx90.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HondaAccord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HondaAccord.Designer.cs">
+      <DependentUpon>HondaAccord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VolkswagenJetta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolkswagenJetta.Designer.cs">
+      <DependentUpon>VolkswagenJetta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vans.Designer.cs">
+      <DependentUpon>Vans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SUV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUV.Designer.cs">
+      <DependentUpon>SUV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sedan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sedan.Designer.cs">
+      <DependentUpon>Sedan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle Management.Designer.cs">
+      <DependentUpon>Vehicle Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapPage.Designer.cs">
+      <DependentUpon>MapPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsPage.Designer.cs">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCarePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerCarePage.Designer.cs">
+      <DependentUpon>CustomerCarePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="1.HomePage.resx">
+      <DependentUpon>1.HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.DashboardPage.resx">
+      <DependentUpon>2.DashboardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChevroletMalibu.resx">
+      <DependentUpon>ChevroletMalibu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chrysler300.resx">
+      <DependentUpon>Chrysler300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classev.resx">
+      <DependentUpon>Classev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLEcabirolet.resx">
+      <DependentUpon>CLEcabirolet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientManagement.resx">
+      <DependentUpon>ClientManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Convertibles.resx">
+      <DependentUpon>Convertibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HondaAccord.resx">
+      <DependentUpon>HondaAccord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mazdacx70.resx">
+      <DependentUpon>Mazdacx70.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mazdacx90.resx">
+      <DependentUpon>Mazdacx90.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MazdaMX5.resx">
+      <DependentUpon>MazdaMX5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MercedesAMGSL.resx">
+      <DependentUpon>MercedesAMGSL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDefender.resx">
+      <DependentUpon>NewDefender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PManagement.resx">
+      <DependentUpon>PManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ratings.resx">
+      <DependentUpon>Ratings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seriesconvertible4.resx">
+      <DependentUpon>Seriesconvertible4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sportback300.resx">
+      <DependentUpon>Sportback300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vans.resx">
+      <DependentUpon>Vans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUV.resx">
+      <DependentUpon>SUV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sedan.resx">
+      <DependentUpon>Sedan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapPage.resx">
+      <DependentUpon>MapPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsPage.resx">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerCarePage.resx">
+      <DependentUpon>CustomerCarePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vehicle Management.resx">
+      <DependentUpon>Vehicle Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vitolongtourer.resx">
+      <DependentUpon>Vitolongtourer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolkswagenJetta.resx">
+      <DependentUpon>VolkswagenJetta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClientManagementDataSet.xsc">
+      <DependentUpon>ClientManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClientManagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClientManagementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClientManagementDataSet.xss">
+      <DependentUpon>ClientManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PaymentDatabaseDataSet.xsc">
+      <DependentUpon>PaymentDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PaymentDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PaymentDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PaymentDatabaseDataSet.xss">
+      <DependentUpon>PaymentDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chrysler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mazda x 70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classe v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chervolet malibu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volkswagen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\honda accord.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mazda cx 90.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new defender.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sportback 300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mazda x 701.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mazda mx 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercedes AMG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLE cabriolet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\series 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classe v1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vito long tourer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating 51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating 52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientManagement.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClientManagement_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ClientManagement.mdf</DependentUpon>
+    </Content>
+    <Content Include="PaymentDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PaymentDatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>PaymentDatabase.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\Eye.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
